@@ -13,9 +13,10 @@ Before you start, you'll need Python and Flask installed on your machine.
 
 5. Install Flask: `(env) $pip3 install flask`
 
-6. Make a “requirements.txt” file in this directory with a listing of all the software needed for this project: `(env) $pip3 freeze > requirements.txt`
+6. Make a “requirements.txt” file in this directory with a listing of all the software needed for this project: 
+`(env) $pip3 freeze > requirements.txt`
 
-(you can look at that file with `cat requirements.txt`)
+    (you can look at that file with `cat requirements.txt`)
 
 7. Then, since we **don’t** want the ***venv/*** folder put into Git (or send to GitHub), put it in a file called ***.gitignore*** (notice the leading dot!). Inside that file should be this line:
 
