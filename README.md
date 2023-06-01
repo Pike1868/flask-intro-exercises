@@ -38,9 +38,9 @@ You should test that Git is ignoring this file by making sure it doesn’t appea
 ## Exercise 1: Greet
 In the greet folder, you'll find a simple Flask app that responds to these routes:
 
-/welcome: Returns the string "welcome".
-/welcome/home: Returns the string "welcome home".
-/welcome/back: Returns the string "welcome back".
+- /welcome: Returns the string "welcome".
+- /welcome/home: Returns the string "welcome home".
+- /welcome/back: Returns the string "welcome back".
 
 To test this application:
 
