@@ -5,14 +5,33 @@ This repository contains two simple Flask exercises aimed to help beginners get 
 Before you start, you'll need Python and Flask installed on your machine.
 
 1. Install Python from the [official website](https://www.python.org/downloads/).
-2. Install Flask by running the command below in your terminal:
- `pip install flask`
+2. At the top level of this (inside ***flask-greet-calc***), create a virtual environment: `$python3 -m venv venv`
+
+3. Start using your venv: `$source venv/bin/activate`
+
+4. Your prompt should now show: `(env) $`
+
+5. Install Flask: `(env) $pip3 install flask`
+
+6. Make a “requirements.txt” file in this directory with a listing of all the software needed for this project: `(env) $pip3 freeze > requirements.txt`
+
+(you can look at that file with `cat requirements.txt`)
+
+7. Then, since we **don’t** want the ***venv/*** folder put into Git (or send to GitHub), put it in a file called ***.gitignore*** (notice the leading dot!). Inside that file should be this line:
+
+*.gitignore*
+
+    `venv/`
+
+(which means “ignore all folders named ***venv/*** anywhere here and below, as far as git is concerned”)
+
+You should test that Git is ignoring this file by making sure it doesn’t appear as an untracked file in ***git status***: `(env)$git status`
 
 ### Getting started
 
 1. Clone this repository to your local machine.
 2. Navigate to the root directory of the project in your terminal.
-3. Run the command export FLASK_APP=app.py to tell Flask which application it should work with.
+3. Navigate to either greet or calc project directory: `cd greet` or `cd calc`
 4. Run the command flask run to start your application.
 
 ## Exercise 1: Greet
